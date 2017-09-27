@@ -47,6 +47,17 @@
 		CE629FEC1F7B9F2A003637BC /* SHNetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SHNetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE629FF01F7B9F2A003637BC /* SHNetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHNetworkUITests.swift; sourceTree = "<group>"; };
 		CE629FF21F7B9F2A003637BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE62A0001F7B9F4C003637BC /* NSDictionary+LYNetworkingMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSDictionary+LYNetworkingMethods.swift"; sourceTree = "<group>"; };
+		CE62A0011F7B9F4C003637BC /* NSURLRequest+LYNetworkingMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSURLRequest+LYNetworkingMethods.swift"; sourceTree = "<group>"; };
+		CE62A0031F7B9F4C003637BC /* LYAPIBaseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYAPIBaseAPIManager.swift; sourceTree = "<group>"; };
+		CE62A0041F7B9F4C003637BC /* LYApiProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYApiProxy.swift; sourceTree = "<group>"; };
+		CE62A0051F7B9F4C003637BC /* LYCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYCache.swift; sourceTree = "<group>"; };
+		CE62A0061F7B9F4C003637BC /* LYError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYError.swift; sourceTree = "<group>"; };
+		CE62A0081F7B9F4C003637BC /* LYNetworkingConfigurationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYNetworkingConfigurationManager.swift; sourceTree = "<group>"; };
+		CE62A00A1F7B9F4C003637BC /* LYService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYService.swift; sourceTree = "<group>"; };
+		CE62A00B1F7B9F4C003637BC /* LYServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYServiceFactory.swift; sourceTree = "<group>"; };
+		CE62A00C1F7B9F4C003637BC /* LYSignatureGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYSignatureGenerator.swift; sourceTree = "<group>"; };
+		CE62A00D1F7B9F4C003637BC /* LYURLResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LYURLResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +108,7 @@
 		CE629FCF1F7B9F2A003637BC /* SHNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				CE629FFE1F7B9F4C003637BC /* LYNetworkingModule */,
 				CE629FD01F7B9F2A003637BC /* AppDelegate.swift */,
 				CE629FD21F7B9F2A003637BC /* ViewController.swift */,
 				CE629FD41F7B9F2A003637BC /* Main.storyboard */,
@@ -123,6 +135,56 @@
 				CE629FF21F7B9F2A003637BC /* Info.plist */,
 			);
 			path = SHNetworkUITests;
+			sourceTree = "<group>";
+		};
+		CE629FFE1F7B9F4C003637BC /* LYNetworkingModule */ = {
+			isa = PBXGroup;
+			children = (
+				CE629FFF1F7B9F4C003637BC /* Categories */,
+				CE62A0021F7B9F4C003637BC /* Components */,
+				CE62A0071F7B9F4C003637BC /* Configurations */,
+				CE62A0091F7B9F4C003637BC /* Generators */,
+			);
+			path = LYNetworkingModule;
+			sourceTree = "<group>";
+		};
+		CE629FFF1F7B9F4C003637BC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A0001F7B9F4C003637BC /* NSDictionary+LYNetworkingMethods.swift */,
+				CE62A0011F7B9F4C003637BC /* NSURLRequest+LYNetworkingMethods.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		CE62A0021F7B9F4C003637BC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A0031F7B9F4C003637BC /* LYAPIBaseAPIManager.swift */,
+				CE62A0041F7B9F4C003637BC /* LYApiProxy.swift */,
+				CE62A0051F7B9F4C003637BC /* LYCache.swift */,
+				CE62A0061F7B9F4C003637BC /* LYError.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CE62A0071F7B9F4C003637BC /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A0081F7B9F4C003637BC /* LYNetworkingConfigurationManager.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		CE62A0091F7B9F4C003637BC /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				CE62A00A1F7B9F4C003637BC /* LYService.swift */,
+				CE62A00B1F7B9F4C003637BC /* LYServiceFactory.swift */,
+				CE62A00C1F7B9F4C003637BC /* LYSignatureGenerator.swift */,
+				CE62A00D1F7B9F4C003637BC /* LYURLResponse.swift */,
+			);
+			path = Generators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
